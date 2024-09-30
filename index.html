@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importancia de la Responsividad</title>
+
+    <!-- Meta Descripción -->
+    <meta name="description" content="Descubre la importancia de una pagina web responsiva">
+    <meta name="keywords" content="Responsividad, Responsivo, Boostrap">
+    <meta name="author" content="Jeshua Herrera Salas">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="Css/header.css">
+    <link rel="stylesheet" href="Css/body.css">
+    <link rel="stylesheet" href="Css/aside.css">
+    <link rel="stylesheet" href="Css/main.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="body">
+        <header>
+            <h1>Diseño web Responsivo</h1>
+        </header>
+        <!---->
+        <Section id="headleft">
+            <img src="Css/Img/RWD.jfif" alt="" style="height: 100%;">
+        </Section>
+        <!---->
+        <section id="headright">
+            <p>Aprende sobre la responsividad de en paginas web, sobre el viwport y los css medias queries</p>
+        </section>
+        <!---->
+        <nav>
+            <a href="#responsive">Disño Responsivo</a>
+            <a href="#viwport">Funcion Viwport</a>
+            <a href="#media">Media Queries</a>
+        </nav>
+        <!---->
+        <aside >
+            <h4>Diseño flexible antes del diseño responsivo</h4>
+            <p style="font-size: 11px;">Se desarrollaron varios enfoques para tratar de resolver los inconvenientes de los 
+                métodos líquidos o de ancho fijo para crear sitios web. En 2004, 
+                Cameron Adams escribió una publicación titulada Resolution dependent layout, 
+                que describe un método para crear un diseño que podría adaptarse a diferentes 
+                resoluciones de pantalla. Este enfoque requería JavaScript para detectar la 
+                resolución de la pantalla y cargar el CSS correcto.
+                Zoe Mickley Gillenwater fue determinante en su trabajo de descripción y 
+                formalización de los diversos modos en que se podían crear sitios web flexibles 
+                para intentar encontrar una situación intermedia entre llenar toda la pantalla o 
+                tener un tamaño completamente fijo.</p>
+        </aside>
+        <!---->
+        <main>
+            <article id="responsive">
+                <h2>Diseño Web Responsivo</h2>
+                <p>El diseño web responsivo (RWD) es una técnica de diseño que permite que un sitio web se adapte automáticamente a diferentes tamaños de pantalla y dispositivos, proporcionando una experiencia de usuario óptima sin importar si se accede desde un teléfono móvil, una tableta o una computadora de escritorio.</p>
+                <span>Importancia e Impacto:</span>
+                <ul>
+                    <li><span>Experiencia del Usuario:</span> Un diseño responsivo mejora significativamente la experiencia del usuario al garantizar que el contenido se vea bien y sea fácil de navegar en cualquier dispositivo. Esto es crucial en un mundo donde el acceso a internet desde dispositivos móviles supera al acceso desde computadoras de escritorio.</li>
+                    <li><span>SEO:</span> Google favorece los sitios web responsivos en sus resultados de búsqueda, lo que puede mejorar la visibilidad y el tráfico del sitio. Un sitio web que no es responsivo puede sufrir penalizaciones en el ranking de búsqueda.</li>
+                    <li><span>Accesibilidad:</span> Facilita el acceso a una audiencia más amplia, incluyendo usuarios con diferentes dispositivos y necesidades de accesibilidad. Esto es importante para cumplir con las normativas de accesibilidad web y para llegar a un público más diverso.</li>
+                </ul>
+                <span>Principios Básicos:</span>
+                <ul>
+                    <li><span>Grillas Flexibles:</span> Utilizar grillas que se ajusten automáticamente al tamaño de la pantalla. Esto se puede lograr utilizando unidades relativas como porcentajes en lugar de unidades fijas como píxeles.</li>
+                    <li><span>Imágenes Flexibles:</span> Imágenes que se redimensionan de manera proporcional para evitar desbordamientos. Esto se puede lograr utilizando la propiedad max-width: 100%; en CSS</li>
+                    <li><span>Media Queries:</span> CSS que aplica estilos específicos según las características del dispositivo, como el ancho de la pantalla. Esto permite crear diseños que se adapten a diferentes tamaños de pantalla.</li>
+                </ul>
+            </article><hr>
+            <!---->
+            <article id="viwport">
+                <h2>Funcionamiento del Viewport</h2>
+                <p>El viewport es el área visible de una página web en un dispositivo. Configurar correctamente el viewport es crucial para asegurar que el sitio web se vea y funcione bien en diferentes dispositivos.</p>
+                <span>Configuración y Uso:</span>
+                <ul>
+                    <li><span>Meta Tag Viewport:</span> Se utiliza en HTML para controlar el layout en dispositivos móviles. Un ejemplo común es:
+                    <br><br>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br><br>
+                    Este meta tag le dice al navegador que el ancho del viewport debe ser igual al ancho del dispositivo y que el nivel de zoom inicial debe ser 1.0.</li>
+                    <li><span>Control de Apariencia:</span> Permite ajustar el zoom y el ancho del contenido para que se adapte correctamente a la pantalla del dispositivo. Esto es esencial para evitar que los usuarios tengan que hacer zoom manualmente o desplazarse horizontalmente para ver el contenido.</li>
+                </ul>
+            </article><hr>
+            <!---->
+            <article id="media">
+                <h2>CSS3 Media Queries</h2>
+                <p>Las media queries son una característica de CSS3 que permite aplicar estilos específicos a diferentes dispositivos basándose en características como el ancho, la altura y la orientación de la pantalla.</p>
+                <span>Uso y Ejemplos Prácticos:</span>
+                <ul>
+                    <li><span>Sintaxis Básica:</span>
+    <pre>@media (max-width: 600px) {
+        .container {
+        flex-direction: column;
+        }
+    }</pre> <br>Este ejemplo cambia la dirección de flexión de un contenedor a columna cuando el ancho de la pantalla es de 600px o menos.
+                    </li>
+                </ul>
+                <span>Aplicaciones Prácticas:</span>
+                <ul>
+                    <li><span>Diseños Adaptables:</span> Ajustar el layout de una página para que se vea bien en dispositivos móviles y de escritorio. Por ejemplo, cambiar el diseño de una barra de navegación de horizontal a vertical en pantallas más pequeñas</li>
+                    <li><span>Optimización de Imágenes:</span> Cambiar el tamaño y la resolución de las imágenes según el dispositivo para mejorar el rendimiento. Por ejemplo, cargar imágenes de menor resolución en dispositivos móviles para reducir el tiempo de carga.</li>
+                </ul>
+            </article>
+        </main>
+        <!---->
+        <section style="clear: both;"></section>
+    </div>
+    <footer>
+        <div>
+            <br><p>Jeshua Herrera Salas</p>
+            <p>Diseño de aplicaciones Web</p>
+            <p>Tarea 3</p>
+            <br>
+        </div>
+        <div>
+            <br><p><a href="https://disenowebakus.net/diseno-web-responsive.php" target="_blank">[Diseño Web Responsive - Tutorial con ejemplos adaptables]</a></p>
+            <br><p><a href="https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank">[Diseño receptivo - Aprende desarrollo web | MDN]</a></p>
+            <br>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
